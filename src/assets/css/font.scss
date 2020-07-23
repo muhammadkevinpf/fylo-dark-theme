@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+@mixin raleway400 {
+  font-family: "Raleway", serif;
+  font-weight: 400;
+}
+
+@mixin raleway700 {
+  font-family: "Raleway", serif;
+  font-weight: 700;
+}
+
+@mixin openSans400 {
+  font-family: "Open Sans", serif;
+  font-weight: 400;
+}
+
+@mixin openSans700 {
+  font-family: "Open Sans", serif;
+  font-weight: 700;
+}
+
+$fontBodySize: 14px;

@@ -1,0 +1,72 @@
+@import "./assets/css/colors.scss";
+@import "./assets/css/font.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  background-color: $darkBlueMain;
+  color: $neutralWhite;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: $darkBlueIntro;
+  #logo {
+    width: 5rem;
+  }
+
+  .nav-wrapper {
+    display: flex;
+    list-style-type: none;
+    @include raleway400;
+  }
+
+  .nav-link {
+    display: inline;
+    cursor: pointer;
+    padding: 1rem 1.1rem 0 0;
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  text-align: center;
+  padding: 1.5rem;
+  background: $darkBlueIntro url("./assets/images/bg-curvy-mobile.svg")
+    no-repeat bottom;
+  background-size: auto 60%;
+  img {
+    object-fit: contain;
+    width: 23rem;
+  }
+
+  button {
+    height: 50px !important;
+    width: 70vw;
+    background-image: linear-gradient(to right, $accentCyan, $accentBlue);
+    @include raleway700;
+  }
+}
+
+.intro-text {
+  h1 {
+    color: $neutralWhite;
+    @include raleway700;
+  }
+  p {
+    @include openSans400;
+  }
+}
