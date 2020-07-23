@@ -54,6 +54,7 @@
   }
 
   button {
+    margin-top: 1.5rem;
     height: 50px !important;
     width: 70vw;
     background-image: linear-gradient(to right, $accentCyan, $accentBlue);
@@ -64,6 +65,25 @@
 .intro-text {
   h1 {
     color: $neutralWhite;
+    @include raleway700;
+  }
+  p {
+    @include openSans400;
+  }
+}
+
+.feature-section {
+  text-align: center;
+  padding: 1.75rem;
+  img {
+    width: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    height: 60px;
+  }
+  h3 {
+    color: $neutralWhite;
+    margin-top: 1rem;
     @include raleway700;
   }
   p {
