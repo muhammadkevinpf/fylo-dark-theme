@@ -35,15 +35,17 @@ const featureData = [
 function Feature() {
   return (
     <div className="feature-section">
-      <Row gutter={24} justify="center">
-        {featureData.map((item, index) => (
-          <Col xs={24} sm={10} md={10} xl={10}>
-            <img src={item.images} alt="feature" />
-            <h3>{item.heading}</h3>
-            <p>{item.body}</p>
-          </Col>
-        ))}
-      </Row>
+      <div className="feature-wrapper">
+        <Row gutter={24} justify="center">
+          {featureData.map((item, index) => (
+            <Col xs={24} sm={10} md={10} xl={10} key="index">
+              <img src={item.images} alt="feature" />
+              <h3>{item.heading}</h3>
+              <p>{item.body}</p>
+            </Col>
+          ))}
+        </Row>
+      </div>
     </div>
   );
 }
