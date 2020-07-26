@@ -1,6 +1,11 @@
 @import "./assets/css/colors.scss";
 @import "./assets/css/font.scss";
 
+@mixin image-illustration {
+  object-fit: contain;
+  width: 22rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -47,8 +52,7 @@
     no-repeat bottom;
   background-size: auto 60%;
   img {
-    object-fit: contain;
-    width: 23rem;
+    @include image-illustration;
   }
 
   button {
@@ -92,6 +96,36 @@
   }
 }
 
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+  img {
+    @include image-illustration;
+    padding-bottom: 1.5rem;
+  }
+  h2 {
+    @include raleway700;
+    color: $neutralWhite;
+  }
+  p {
+    @include openSans400;
+  }
+  button {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #1890ff;
+    padding: 0;
+    @include openSans400;
+    img {
+      width: 1rem;
+      padding-bottom: 0;
+    }
+  }
+}
+
 @media (min-width: 800px) {
   .welcome-wrapper {
     width: 40vw;
@@ -113,6 +147,12 @@
         left: 0.8rem;
         right: 0.8rem;
       }
+    }
+  }
+
+  .about-section {
+    h2 {
+      font-size: 2em;
     }
   }
 }
