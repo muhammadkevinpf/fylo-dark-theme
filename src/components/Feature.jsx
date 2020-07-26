@@ -28,7 +28,7 @@ const featureData = [
     images: IconFile,
     heading: "Store any type of file",
     body:
-      "Wheter you're sharing holidays photos of work documents, Fylo has you covered allowing for all file types to be securely stored and shared.",
+      "Wether you're sharing holidays photos of work documents, Fylo has you covered allowing for all file types to be securely stored and shared.",
   },
 ];
 

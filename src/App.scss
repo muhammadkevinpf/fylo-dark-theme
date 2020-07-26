@@ -99,10 +99,12 @@
 .about-section {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
   padding: 1.5rem;
-  img {
+
+  #about-illustration-wrapper {
+    text-align: center;
+  }
+  #about-illustration {
     @include image-illustration;
     padding-bottom: 1.5rem;
   }
@@ -133,6 +135,11 @@
   .feature-wrapper {
     width: 65vw;
   }
+  .about-wrapper {
+    width: 65vw;
+    display: flex;
+    align-items: center;
+  }
   .welcome-section {
     background-size: 100% 60%;
     padding-bottom: 4rem;
@@ -151,8 +158,15 @@
   }
 
   .about-section {
+    #about-illustration {
+      width: 27rem;
+    }
     h2 {
+      width: 50%;
       font-size: 2em;
     }
+  }
+  #about-text-wrapper {
+    padding-left: 5em;
   }
 }
