@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Welcome from "./components/Welcome";
 import Feature from "./components/Feature";
 import About from "./components/About";
+import Testimoni from "./components/Testimoni";
 function App() {
   return (
     <div className="App">
@@ -12,6 +13,7 @@ function App() {
       <Welcome />
       <Feature />
       <About />
+      <Testimoni />
     </div>
   );
 }
