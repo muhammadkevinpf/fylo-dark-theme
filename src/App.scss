@@ -153,6 +153,7 @@
 
 .card-footer {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   .card-footer-avatar {
     margin-right: 0.5em;
@@ -163,6 +164,38 @@
   }
   small {
     @include openSans400;
+  }
+  input {
+    width: 100%;
+    margin-bottom: 2em;
+    border: none;
+    @include openSans400;
+    font-size: small;
+    padding: 1em 2em;
+    border-radius: 30px;
+  }
+  button {
+    width: 100%;
+    border: none;
+    padding: 1em 2em;
+    border-radius: 30px;
+    background-image: linear-gradient(to right, $accentCyan, $accentBlue);
+    @include openSans700;
+  }
+}
+
+.contact-section {
+  text-align: center;
+  padding: 1.6rem;
+  .card {
+    h3 {
+      @include openSans700;
+      color: $neutralWhite;
+      font-size: 1.5em;
+    }
+    p {
+      font-size: 14px;
+    }
   }
 }
 
@@ -218,5 +251,30 @@
   #quote-icon {
     position: absolute;
     left: 17.5vw;
+  }
+
+  .contact-section {
+    display: flex;
+    justify-content: center;
+    .card {
+      padding: 2em 4em;
+      h3 {
+        font-size: 2em;
+      }
+      .card-footer {
+        justify-content: space-between;
+      }
+    }
+    input {
+      width: 60%;
+      margin-bottom: 0;
+    }
+    button {
+      width: 35%;
+    }
+  }
+
+  .contact-wrapper {
+    width: 45vw;
   }
 }

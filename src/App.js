@@ -6,6 +6,8 @@ import Welcome from "./components/Welcome";
 import Feature from "./components/Feature";
 import About from "./components/About";
 import Testimoni from "./components/Testimoni";
+import Contact from "./components/Contact";
+
 function App() {
   return (
     <div className="App">
@@ -14,6 +16,7 @@ function App() {
       <Feature />
       <About />
       <Testimoni />
+      <Contact />
     </div>
   );
 }
