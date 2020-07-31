@@ -17,6 +17,10 @@
   color: $neutralWhite;
 }
 
+.align-items-center {
+  align-items: center;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -173,6 +177,7 @@
     font-size: small;
     padding: 1em 2em;
     border-radius: 30px;
+    color: #000;
   }
   button {
     width: 100%;
@@ -187,6 +192,7 @@
 .contact-section {
   text-align: center;
   padding: 1.6rem;
+  transform: translateY(200px);
   .card {
     h3 {
       @include openSans700;
@@ -204,6 +210,64 @@
   top: 15px;
   left: 9vw;
   width: 30px;
+}
+
+footer {
+  background-color: $darkBlueFooter;
+  padding: 16em 2em 6em 2em;
+
+  #logo-footer {
+    margin-bottom: 3em;
+  }
+
+  .footer-link-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(1fr));
+    row-gap: 2.5em;
+  }
+
+  .footer-icon {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    flex-wrap: nowrap;
+    padding-bottom: 1em;
+    img {
+      padding-right: 1em;
+      padding-top: 0.3em;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    li {
+      padding-bottom: 1em;
+    }
+  }
+
+  .nav-link-button-wrapper {
+    display: flex;
+    justify-content: center;
+    button {
+      cursor: pointer;
+      background-color: transparent;
+      border-radius: 50%;
+      border: 1px solid $neutralWhite;
+      padding: 5px;
+      width: 30px;
+      height: 30px;
+      margin-right: 1em;
+    }
+  }
+}
+
+.mobile {
+  display: block;
+}
+
+.desktop {
+  display: none !important;
 }
 
 @media (min-width: 800px) {
@@ -236,6 +300,7 @@
   }
 
   .about-section {
+    margin-bottom: 3em;
     #about-illustration {
       width: 27rem;
     }
@@ -256,6 +321,7 @@
   .contact-section {
     display: flex;
     justify-content: center;
+    transform: translateY(150px);
     .card {
       padding: 2em 4em;
       h3 {
@@ -276,5 +342,22 @@
 
   .contact-wrapper {
     width: 45vw;
+  }
+
+  .footer-link-wrapper {
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: flex !important;
+  }
+
+  .footer-icon-wrapper {
+    flex-direction: column;
   }
 }

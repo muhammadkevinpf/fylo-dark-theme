@@ -7,6 +7,7 @@ import Feature from "./components/Feature";
 import About from "./components/About";
 import Testimoni from "./components/Testimoni";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <About />
       <Testimoni />
       <Contact />
+      <Footer />
     </div>
   );
 }
